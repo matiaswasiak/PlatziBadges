@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 
 function Layout(props) {
   // const children = props.children;
+
   return (
     <React.Fragment>
       <Navbar />

@@ -21,9 +21,6 @@ class BadgeNew extends React.Component {
   };
 
   handleChange = (e) => {
-    // const nextForm = this.state.form;
-    // nextForm[e.target.name] = e.target.value;
-
     this.setState({
       form: {
         ...this.state.form,
@@ -50,6 +47,7 @@ class BadgeNew extends React.Component {
     if (this.state.loading) {
       return <PageLoading />;
     }
+
     return (
       <React.Fragment>
         <div className="BadgeNew__hero">
@@ -62,14 +60,14 @@ class BadgeNew extends React.Component {
 
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-6">
               <Badge
                 firstName={this.state.form.firstName || "FIRST_NAME"}
                 lastName={this.state.form.lastName || "LAST_NAME"}
                 twitter={this.state.form.twitter || "twitter"}
                 jobTitle={this.state.form.jobTitle || "JOB_TITLE"}
                 email={this.state.form.email || "EMAIL"}
-                avatarUrl="https://www.gravatar.com/avatar?=identicon"
+                avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
               />
             </div>
 
